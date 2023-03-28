@@ -1,0 +1,27 @@
+icon: https://raw.githubusercontent.com/rberrelleza/python-getting-started/rb/launch-darkly-integration/icon.png
+
+build:
+  hello-world:
+    context: .
+
+deploy:
+  - name: Deploy application
+    command: |
+      set -e
+      cd manifests
+      kustomize edit set image okteto/hello-world=${OKTETO_BUILD_HELLO_WORLD_IMAGE}
+      kubectl apply -k .
+
+dev:
+  hello-world:
+    command: bash
+    sync:
+    - .:/usr/src/app
+    forward:
+    - 8080:8080
+
+dependencies:
+  launchdarkly:
+    repository: https://github.com/okteto/launchdarkly
+    branch: main
+    wait: true
