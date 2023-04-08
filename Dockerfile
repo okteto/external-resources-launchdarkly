@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
+COPY public public
 COPY templates templates
 COPY app.py app.py
 
