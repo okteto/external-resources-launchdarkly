@@ -39,7 +39,3 @@ To use the LaunchDarkly Okteto integration, you must meet the following prerequi
 7. Toggle the value to **ON** and reload the *external-resources-launchdarkly* endpoint, notice the new output being "Hello New World! 🌎"
 
 8. You're now up and running to start using feature flags as part of your development lifecycle 🚀
-
----
-
-Note: the deployment step requires `kustomize`, if you don't have it installed, check out how to [Install Kustomize](https://kubectl.docs.kubernetes.io/installation/kustomize/).
