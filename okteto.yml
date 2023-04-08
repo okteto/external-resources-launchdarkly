@@ -21,6 +21,9 @@ dev:
     - .:/usr/src/app
     forward:
     - 8080:8080
+    environment:
+      FLASK_DEBUG: "1"
+
 
 dependencies:
   launchdarkly:
