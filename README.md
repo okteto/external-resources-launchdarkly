@@ -36,6 +36,6 @@ To use the LaunchDarkly Okteto integration, you must meet the following prerequi
 
 6. Go to the LaunchDarkly dashboard, you should find a new environment named after your Okteto namespace, find the `use-new-emojis` feature flag
 
-7. Toggle the value to **ON** and reload the *external-resources-launchdarkly* endpoint, notice the new output being "Hello New World! 🌎"
+7. Toggle the value to **ON** and reload the *external-resources-launchdarkly* endpoint, notice the new output being "Hello World! 🌎"
 
 8. You're now up and running to start using feature flags as part of your development lifecycle 🚀
