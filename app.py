@@ -1,7 +1,7 @@
 import os
 import pydevd_pycharm
 
-from flask import Flask
+from flask import Flask, render_template
 
 import ldclient
 from ldclient import Context
@@ -16,12 +16,15 @@ feature_flag_key = "use-new-emojis"
 def hello_world():
     context = Context.builder('okteto').name('Cindy').build()
     flag_value = ldclient.get().variation(feature_flag_key, context, False)
+
     if flag_value:
       msg = 'Hello New World! 🌎'
+      return render_template("index-dark.html", msg=msg)
+
     else: 
       msg = 'Hello World! 🌐'
-    
-    return msg
+      return render_template("index-light.html", msg=msg)
+
 
 def attach():
   if os.environ.get('WERKZEUG_RUN_MAIN'):

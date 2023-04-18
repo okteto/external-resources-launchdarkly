@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<head>
+    <style>
+        body {
+            background-color: #00D1CA;
+            color: #1A263E;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1A263E;
+            color: #00D1CA;
+            text-align: center;
+        }
+    </style>
+    <title>ERI with Okteto</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <h1 class="text-center">{{ msg }}</h1>
+        {{background_color}}
+    </div>
+</body>
+
+<footer class="page-footer font-small">
+    <div class="footer-copyright text-center py-3">Powered by Okteto and LaunchDarkly</div>
+</footer>
+
+</html>
