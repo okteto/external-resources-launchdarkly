@@ -9,7 +9,7 @@ Okteto will automatically manage the lifecycle of the LaunchDarkly environment f
 To use the LaunchDarkly Okteto integration, you must meet the following prerequisites:
 1. A LaunchDarkly account
 1. A LaunchDarkly project 
-1. An Okteto account
+1. An Okteto account (([Sign-up](https://www.okteto.com/try-free/) for 30 day, self-hosted free trial))
 
 
 ## Instructions
